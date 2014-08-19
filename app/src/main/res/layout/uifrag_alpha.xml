@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0sp"
+        android:background="@drawable/pinkborderbg" />
+    <AutoCompleteTextView
+        android:layout_width="500sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSearch"
+        android:inputType="text"
+        android:hint="@string/etHint"
+        android:layout_margin="5sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbGo"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etSearch"
+        android:contentDescription="@string/go"
+        android:text="@string/go"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerSavedPlaces"
+        android:layout_below="@+id/etSearch"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5sp"/>
+</RelativeLayout>
